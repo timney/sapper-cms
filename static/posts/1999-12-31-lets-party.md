@@ -1,8 +1,12 @@
 ---
 layout: blog
-title: "Let's Party"
+title: Let's Party
 date: 1999-12-31 11:59:59 -0800
 rating: 5
+slug: lets_party
 ---
+Holly shit dog
 
-This is the post body, where I write about our last chance to party before the Y2K bug destroys us all.
+
+
+![](/uploads/minidisc.png)
