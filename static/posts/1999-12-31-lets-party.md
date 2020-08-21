@@ -6,3 +6,7 @@ rating: 5
 slug: lets_party
 ---
 Holly shit dog
+
+
+
+![](/uploads/minidisc.png)
