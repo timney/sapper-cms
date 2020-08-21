@@ -16,3 +16,12 @@ collections:
       - { label: "Slug", name: "slug", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "pages"
+    files:
+      - label: "Home page"
+        file: "static/content/home_page.yaml"
+        name: "home"
+        fields:
+          - {label: Header, name: header, widget: string}
