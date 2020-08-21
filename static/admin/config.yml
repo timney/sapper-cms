@@ -3,4 +3,15 @@ backend:
     branch: master # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
-media_folder: "static/images"
+media_folder: "static/uploads"
+public_foldeR: "/uploads"
+
+collections:
+    - name: "blog" # Used in routes, e.g., /admin/collections/blog
+      label: "Blog" # Used in the UI
+      folder: "static/posts" # The path to the folder where our blog posts are stored
+      create: true # Allow users to create new documents in this collection
+      fields: # The fields for each document
+        - { label: "Slug", name: "slug", widget: "string" }
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Body", name: "body", widget: "markdown" }
