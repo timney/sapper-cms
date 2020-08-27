@@ -1,3 +1,25 @@
+<script context="module">
+	// the (optional) preload function takes a
+	// `{ path, params, query }` object and turns it into
+	// the data we need to render the page
+	export async function preload(page, session) {
+
+		// `this.fetch` is a wrapper around `fetch` that allows
+		// you to make credentialled requests on both
+		// server and client
+		const res = await this.fetch(`index.json`);
+		const data = await res.json();
+
+		return {...data };
+	}
+</script>
+
+
+<script>
+	export let header;
+	export let subHeader;
+</script>
+
 <style>
 	h1, figure, p {
 		text-align: center;
@@ -36,11 +58,11 @@
 	<title>Sapper project template</title>
 </svelte:head>
 
-<h1>Great Scott!</h1>
+<h1>{header}</h1>
 
 <figure>
 	<img alt='Success Kid' src='successkid.jpg'>
-	<figcaption>Have fun with Sapper!</figcaption>
+	<figcaption>{subHeader}</figcaption>
 </figure>
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
