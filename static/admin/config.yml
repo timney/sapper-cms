@@ -21,7 +21,7 @@ collections:
     label: "pages"
     files:
       - label: "Home page"
-        file: "static/content/home_page.yaml"
+        file: "static/content/home_page.md"
         name: "home"
         fields:
           - {label: Header, name: header, widget: string}
