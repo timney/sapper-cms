@@ -25,3 +25,4 @@ collections:
         name: "home"
         fields:
           - {label: Header, name: header, widget: string}
+          - {label: Sub Header, name: subHeader, widget: string}
